@@ -18,6 +18,7 @@
     "format": "pnpm prettier --check \"src/**/*.{ts,js}\" -w",
     "ls:pack": "npm pack --dry-run",
     "prepare": "ts-patch install -s",
+    "prepare:husky": "husky install",
     "semantic-release": "semantic-release"
   },
   "packageManager": "pnpm@8.14.3",
@@ -41,6 +42,8 @@
   },
   "homepage": "https://github.com/Kzidaitou/npm-lib-template#readme",
   "devDependencies": {
+    "@commitlint/cli": "^18.6.1",
+    "@commitlint/config-conventional": "^18.6.2",
     "@rollup/plugin-alias": "^5.1.0",
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-json": "^6.1.0",
@@ -62,6 +65,7 @@
     "eslint-config-icebreaker": "^1.2.3",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
+    "husky": "^9.0.11",
     "klaw": "^4.1.0",
     "lodash": "^4.17.21",
     "lodash-es": "^4.17.21",
